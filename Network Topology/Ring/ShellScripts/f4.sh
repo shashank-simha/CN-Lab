@@ -1,0 +1,1 @@
+grep "^r" Ring.tr | grep -c "cbr"

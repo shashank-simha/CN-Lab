@@ -1,0 +1,1 @@
+grep "^r" Bus.tr | grep -c "cbr"
