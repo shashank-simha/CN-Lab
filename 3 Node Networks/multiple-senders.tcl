@@ -10,6 +10,9 @@ set n2 [$ns node]
 $ns duplex-link $n0 $n1 10Mb 8ms DropTail
 $ns duplex-link $n1 $n2 10Mb 8ms DropTail
 
+$ns duplex-link-op $n0 $n1 queuePos 0.5
+$ns duplex-link-op $n1 $n2 queuePos 0.5
+
 $ns queue-limit $n0 $n1 3
 $ns queue-limit $n2 $n1 3
 
